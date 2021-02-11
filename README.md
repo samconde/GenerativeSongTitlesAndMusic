@@ -14,7 +14,7 @@ This project contains two examples of generative code:
 Navigate to the ''TitleGeneration'' Folder
 
 ## Example Output Code
-Here's an example of five titles generated from GPT-2 (and with a text file of the musical, Hamilton), generated with the prefix of "Song of ".
+Here's an example of five titles generated from GPT-2 (and with a cleaned up text file of the musical, Hamilton), generated with the prefix of "Song of ".
 
 *Song of Thorns Throwing And Angelica Angelica Angel*
 
