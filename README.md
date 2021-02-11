@@ -105,7 +105,9 @@ learning_rate: Learning rate for the training. (default 1e-4, can lower to 1e-5 
 run_name: subfolder within checkpoint to save the model. This is useful if you want to work with multiple models (will also need to specify run_name when loading the model)
 overwrite: Set to True if you want to continue finetuning an existing model (w/ restore_from='latest') without creating duplicate copies.
 
-Other optional-but-helpful parameters for gpt2.generate and friends:length: Number of tokens to generate (default 1023, the maximum)
+Other optional-but-helpful parameters for gpt2.generate and friends:
+
+length: Number of tokens to generate (default 1023, the maximum)
 temperature: The higher the temperature, the crazier the text (default 0.7, recommended to keep between 0.7 and 1.0)
 top_k: Limits the generated guesses to the top k guesses (default 0 which disables the behavior; if the generated output is super crazy, you may want to set top_k=40)
 top_p: Nucleus sampling: limits the generated guesses to a cumulative probability. (gets good results on a dataset with top_p=0.9)
