@@ -131,14 +131,20 @@ To generate good output, tweak the temperature parameter to find a balance betwe
 Navigate to the ''MusicGeneration'' Folder
 
 ## Example Output Code
-TBD
+Examples of the generator's musical output can be found in the GenerativeMusic folder. It contains examples of the project prepared three ways: 1) using the folk genre MIDI corpus alone, 2) using Magenta's pre-trained model, and 3) using the pre-trained model post-trained on the folk genre dataset.
 
 ## Instructions on how to run code
-TBD
+Running in Google Colab, run the cell that installs Magenta and sets up the environment.
+
+Download Magenta's pre-trained model; then download the folk genre MIDI corpus and convert the MIDI files to NoteSequence.
+
+Run the cell that trains the model on new MIDI files, making sure that --run_dir points to the folder with the model and that --examples_path points to the collection of NoteSequences.
+
+Then, load the current model, set the generator's temperature, and run the generation cell.
 
 ## Rules/Constraints
-TBD
+The generator is configured to generate 16-bar musical sequences using trio instrumentation (drums, bass, and piano).
 
 ## Process for creating output
-TBD
+As with the text generator, tweaking the temperature parameter will change how the generator parses the output.
 
